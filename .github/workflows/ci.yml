@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    name: 冒烟测试
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # 插件本体零运行时依赖，不需要 npm install
+      - name: 检查依赖确实为空
+        run: node -e "const p=require('./package.json'); const n=Object.keys(p.dependencies||{}).length; console.log('runtime deps:', n); if(n>0) process.exit(1)"
+
+      - name: 插件自测（假 ctx 跑命令 / 工具 / 路由）
+        run: node test/harness.mjs .
+
+      - name: 索引与检索冒烟测试
+        run: node test/ci-smoke.mjs

@@ -1,5 +1,9 @@
 # dsh-code-ctx
 
+[![CI](https://github.com/y2187218823/dsh-code-ctx/actions/workflows/ci.yml/badge.svg)](https://github.com/y2187218823/dsh-code-ctx/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![runtime deps](https://img.shields.io/badge/runtime%20deps-0-brightgreen.svg)](package.json)
+
 **给 AI agent 一副「知道该看哪个文件」的眼睛。**
 
 Agent 改 bug 时最大的瓶颈不是模型，是「该看哪几个文件」——给整个仓库会撑爆上下文，
