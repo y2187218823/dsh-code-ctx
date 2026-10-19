@@ -1,0 +1,22 @@
+# 依赖与构建产物
+node_modules/
+.pnpm-store/
+
+# 索引与缓存（体积大、可重建）
+.code-ctx/
+.hf-cache/
+
+# 评测中间产物（diff 缓存可重下）
+eval/cache/
+
+# 日志与临时文件
+*.log
+*.tmp
+_*.mjs
+_stat*.mjs
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

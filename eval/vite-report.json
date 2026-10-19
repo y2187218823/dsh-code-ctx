@@ -1,0 +1,2332 @@
+{
+  "repo": "vitejs/vite",
+  "index": ".code-ctx\\vite.json",
+  "topk": 8,
+  "samples": 110,
+  "recall": 0.43138593729502817,
+  "hit": 0.8090909090909091,
+  "mrr": 0.6271212121212123,
+  "rows": [
+    {
+      "query": "handle missing chunk import maps",
+      "truth": [
+        "packages/vite/src/node/__tests__/build.spec.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts"
+      ],
+      "top": [
+        "packages/vite/src/module-runner/sourcemap/index.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/rolldown.config.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/server/sourcemap.ts",
+        "packages/vite/src/node/plugins/forwardConsole.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/plugins/css.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "don't fail on a literal `%` in `url()`",
+      "truth": [
+        "packages/vite/src/node/__tests__/plugins/css.spec.ts",
+        "packages/vite/src/node/plugins/css.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/assetImportMetaUrl.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/server/middlewares/rejectInvalidRequest.ts",
+        "packages/vite/src/node/plugins/workerImportMetaUrl.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "skip patches dir hash for nub lockfile",
+      "truth": [
+        "packages/vite/src/node/optimizer/index.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/plugins/oxc.ts",
+        "packages/vite/src/node/plugins/prepareOutDir.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/__tests__/optimizer/lockfileHash.spec.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "replace `@vercel/detect-agent` with `std-env`",
+      "truth": [
+        "packages/create-vite/src/index.ts",
+        "packages/vite/src/node/server/index.ts"
+      ],
+      "top": [
+        "packages/plugin-legacy/src/index.ts",
+        "packages/create-vite/src/index.ts",
+        "packages/plugin-legacy/src/snippets.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/env.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "map forwarded error stacks through the bundle source maps",
+      "truth": [
+        "packages/vite/src/node/plugins/forwardConsole.ts",
+        "playground/forward-console/__test__/forward-console.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/module-runner/sourcemap/index.ts",
+        "packages/vite/src/node/ssr/runtime/serverModuleRunner.ts",
+        "packages/vite/src/node/plugins/forwardConsole.ts",
+        "packages/vite/src/module-runner/sourcemap/interceptor.ts",
+        "packages/vite/rolldown.config.ts",
+        "packages/vite/src/shared/forwardConsole.ts",
+        "packages/vite/src/node/server/sourcemap.ts",
+        "packages/vite/src/node/server/bundledDev.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query": "handle socket errors on upgrade requests not taken by the HMR server",
+      "truth": [
+        "packages/vite/src/node/server/ws.ts",
+        "playground/hmr/__tests__/ws.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/ws.ts",
+        "packages/vite/src/node/server/environment.ts",
+        "packages/vite/src/node/http.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/server/environments/fetchableEnvironments.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts",
+        "packages/vite/src/node/server/pluginContainer.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "scan `oxc.jsxInject` imports",
+      "truth": [
+        "packages/vite/src/node/__tests__/scan.spec.ts",
+        "packages/vite/src/node/optimizer/scan.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/oxc.ts",
+        "packages/vite/src/node/optimizer/scan.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/config.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "include user `import.meta.env.*` defines in the `import.meta.env` object",
+      "truth": [
+        "packages/vite/src/node/plugins/define.ts",
+        "playground/env/__tests__/env.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/define.ts",
+        "packages/vite/src/node/plugin.ts",
+        "packages/vite/src/node/env.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query": "fall back to yarn.lock for lockfile hash",
+      "truth": [
+        "packages/vite/src/node/__tests__/optimizer/lockfileHash.spec.ts",
+        "packages/vite/src/node/optimizer/index.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/__tests__/optimizer/lockfileHash.spec.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/module-runner/utils.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/create-vite/src/index.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "ignore build.chunkImportMap",
+      "truth": [
+        "packages/vite/src/node/build.ts",
+        "vitest.config.e2e.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/plugin-legacy/src/index.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/server/sourcemap.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/forwardConsole.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.25
+    },
+    {
+      "query": "normalize served output files",
+      "truth": [
+        "packages/vite/src/node/server/bundledDev.ts",
+        "playground/backend-integration/__tests__/backend-integration.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/middlewares/static.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/publicDir.ts",
+        "packages/vite/src/node/server/middlewares/memoryFiles.ts",
+        "packages/vite/src/node/env.ts",
+        "packages/vite/src/node/server/warmup.ts",
+        "packages/vite/src/node/server/bundledDev.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.125
+    },
+    {
+      "query": "apply `server.origin` to asset URLs",
+      "truth": [
+        "packages/vite/src/node/plugins/asset.ts",
+        "playground/backend-integration/__tests__/backend-integration.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/server/middlewares/proxy.ts",
+        "packages/vite/src/node/server/middlewares/static.ts",
+        "packages/vite/src/node/logger.ts",
+        "packages/vite/src/node/server/middlewares/hostCheck.ts",
+        "packages/vite/src/node/plugins/assetImportMetaUrl.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "only strip base when path matches a full segment",
+      "truth": [
+        "packages/vite/src/node/server/middlewares/base.ts",
+        "playground/base/__tests__/base.spec.ts",
+        "playground/base/foobar/a.js",
+        "playground/base/vite.config.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/middlewares/base.ts",
+        "packages/vite/src/node/nativeConfigCompat.ts",
+        "packages/vite/src/node/plugins/preAlias.ts",
+        "packages/vite/src/node/server/middlewares/static.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/importMetaGlob.ts",
+        "packages/vite/src/node/config.ts"
+      ],
+      "recall": 0.25,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "match static aliases on path boundaries",
+      "truth": [
+        "packages/vite/src/node/server/middlewares/__tests__/static.spec.ts",
+        "packages/vite/src/node/server/middlewares/static.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/middlewares/static.ts",
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/preAlias.ts",
+        "packages/vite/src/node/plugins/importMetaGlob.ts",
+        "packages/vite/src/node/server/hmr.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "support `import.meta.hot.acceptExports`",
+      "truth": [
+        "packages/vite/src/client/bundledDevClient.ts",
+        "packages/vite/src/client/bundledDevHmrClient.ts",
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/shared/hmr.ts",
+        "playground/hmr/__tests__/hmr.spec.ts",
+        "playground/hmr/__tests__/no-partial-accept/hmr-no-partial-accept.spec.ts",
+        "playground/hmr/vite.config-no-partial-accept.js",
+        "playground/hmr/vite.config.ts",
+        "playground/test-utils.ts",
+        "playground/vitestGlobalSetup.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/plugin-legacy/src/snippets.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/shared/hmr.ts",
+        "packages/vite/src/module-runner/runner.ts",
+        "packages/vite/src/node/ssr/ssrModuleLoader.ts",
+        "packages/vite/src/client/bundledDevHmrClient.ts"
+      ],
+      "recall": 0.2,
+      "hit": 1,
+      "mrr": 0.2
+    },
+    {
+      "query": "skip rewriting unchanged adopted styles",
+      "truth": [
+        "packages/vite/src/client/client.ts",
+        "playground/hmr/__tests__/hmr.spec.ts",
+        "playground/hmr/css-style/main.js",
+        "playground/hmr/css-style/plugin.ts",
+        "playground/hmr/vite.config.ts"
+      ],
+      "top": [
+        "packages/vite/src/client/client.ts",
+        "packages/vite/src/node/server/middlewares/htmlFallback.ts",
+        "playground/css-sourcemap/__tests__/css-sourcemap.spec.ts",
+        "playground/css-sourcemap/__tests__/lightningcss/lightningcss.spec.ts",
+        "playground/hmr/css-style/plugin.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/plugins/css.ts"
+      ],
+      "recall": 0.4,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "correct preloads when chunkImportMap is enabled with non-root base",
+      "truth": [
+        "packages/vite/src/node/__tests__/build.spec.ts",
+        "packages/vite/src/node/plugins/html.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/module-runner/sourcemap/index.ts",
+        "packages/plugin-legacy/src/index.ts",
+        "packages/vite/src/node/config.ts",
+        "playground/preload/__tests__/preload.spec.ts",
+        "packages/vite/src/node/deprecations.ts",
+        "packages/vite/src/node/plugins/modulePreloadPolyfill.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "avoid adding filesystem root to watcher",
+      "truth": [
+        "packages/vite/src/node/server/middlewares/__tests__/indexHtml.spec.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/watch.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/__tests__/watcher.spec.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/optimizedDeps.ts",
+        "packages/vite/src/node/server/warmup.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.125
+    },
+    {
+      "query": "remove input option unescaping for now",
+      "truth": [
+        "packages/vite/src/node/__tests__/config.spec.ts",
+        "packages/vite/src/node/config.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/shortcuts.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/plugins/worker.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query": "a restart requested during a restart used to be dropped (fix #23392)",
+      "truth": [
+        "packages/vite/src/node/__tests__/dev.spec.ts",
+        "packages/vite/src/node/server/index.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/transformRequest.ts",
+        "packages/vite/src/node/server/__tests__/hmr.spec.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/ssr/ssrStacktrace.ts",
+        "packages/vite/src/node/server/middlewares/rejectInvalidRequest.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/server/pluginContainer.ts",
+        "packages/vite/src/node/plugins/asset.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query": "resolve imported preprocessors from their file path with lightningcss",
+      "truth": [
+        "packages/vite/src/node/plugins/css.ts",
+        "playground/css/__tests__/tests.ts",
+        "playground/css/main.js"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/server/moduleGraph.ts"
+      ],
+      "recall": 0.3333333333333333,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "don't treat modules ending with js-like query as js",
+      "truth": [
+        "packages/vite/src/node/__tests__/plugins/oxc.spec.ts",
+        "packages/vite/src/node/plugins/oxc.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/moduleGraph.ts",
+        "packages/vite/src/node/server/mixedModuleGraph.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/plugins/assetImportMetaUrl.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/module-runner/evaluatedModules.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "scan deep imports with custom extensions",
+      "truth": [
+        "packages/vite/src/node/optimizer/scan.ts",
+        "playground/optimize-deps/__tests__/optimize-deps.spec.ts",
+        "playground/optimize-deps/svelte-deep-import.js",
+        "playground/optimize-deps/vite.config.js"
+      ],
+      "top": [
+        "packages/vite/src/node/optimizer/scan.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/packages.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "playground/optimize-deps/vite.config.js"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "wait for in-flight stylesheets in preload helper (fix #23652)",
+      "truth": [
+        "packages/vite/src/node/__tests__/plugins/importAnalysisBuild.spec.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "playground/js-sourcemap/__tests__/js-sourcemap.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/modulePreloadPolyfill.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/plugins/wasm.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/dynamicImportVars.ts",
+        "packages/vite/src/node/plugins/esbuild.ts"
+      ],
+      "recall": 0.3333333333333333,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "avoid mutating hmr defaults (fix #23575)",
+      "truth": [
+        "packages/vite/src/node/__tests__/config.spec.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/ssr/index.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/server/index.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "skip caching CSS of chunks in a cycle (fix #23628)",
+      "truth": [
+        "packages/vite/src/node/__tests__/html.spec.ts",
+        "packages/vite/src/node/plugins/html.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/ssr/ssrManifestPlugin.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/node/plugins/manifest.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/plugins/asset.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "skip cloning call sites that have no source map",
+      "truth": [
+        "packages/vite/src/module-runner/sourcemap/interceptor.ts",
+        "packages/vite/src/node/ssr/runtime/__tests__/server-source-maps.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/module-runner/sourcemap/interceptor.ts",
+        "packages/vite/src/module-runner/sourcemap/index.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/server/sourcemap.ts",
+        "packages/vite/src/module-runner/sourcemap/decoder.ts",
+        "packages/vite/src/node/plugins/forwardConsole.ts",
+        "packages/vite/src/node/ssr/fetchModule.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "import CSS HMR helpers from `/@vite/client`",
+      "truth": [
+        "packages/vite/src/client/bundledDevClient.ts",
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/plugins/css.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/module-runner/hmrHandler.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/shared/hmr.ts",
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/client/bundledDevClient.ts",
+        "packages/vite/src/node/plugins/wasm.ts",
+        "packages/vite/src/client/client.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query": "serve `/@vite/client` and stub `@vite/env`",
+      "truth": [
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/server/bundledDev.ts",
+        "packages/vite/src/node/server/middlewares/memoryFiles.ts",
+        "playground/define/__tests__/define.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/server/middlewares/static.ts",
+        "packages/vite/src/node/env.ts",
+        "packages/vite/src/node/packages.ts",
+        "packages/vite/src/node/preview.ts",
+        "packages/vite/src/node/server/bundledDev.ts"
+      ],
+      "recall": 0.4,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "normalize file before root check in `ensureWatchedFile`",
+      "truth": [
+        "packages/vite/src/node/server/__tests__/watcher.spec.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/packages.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/server/pluginContainer.ts",
+        "packages/vite/src/node/plugins/oxc.ts",
+        "packages/vite/src/node/watch.ts",
+        "packages/vite/src/node/publicDir.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "store ids to `safeModulePaths` rather than URLs",
+      "truth": [
+        "packages/vite/src/node/__tests__/dev.spec.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "playground/fs-serve/__tests__/fs-serve.spec.ts",
+        "playground/fs-serve/root/safeModulePathPlugin.ts",
+        "playground/fs-serve/root/vite.config-base.js",
+        "playground/fs-serve/root/vite.config-deny.js",
+        "playground/fs-serve/root/vite.config.js"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/middlewares/static.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/server/moduleGraph.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts",
+        "packages/vite/src/node/plugins/importMetaGlob.ts",
+        "packages/vite/src/node/plugins/asset.ts"
+      ],
+      "recall": 0.14285714285714285,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "check `fs.serve` for `?vite-wasm-instance`",
+      "truth": [
+        "packages/vite/src/node/server/middlewares/transform.ts",
+        "playground/fs-serve/__tests__/commonTests.ts",
+        "playground/fs-serve/root/matrixTestResultPlugin.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/wasm.ts",
+        "packages/vite/src/node/server/middlewares/transform.ts",
+        "packages/vite/src/node/server/middlewares/static.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/preview.ts",
+        "packages/vite/src/node/config.ts"
+      ],
+      "recall": 0.3333333333333333,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "filename passed to transformIndexHtml should not include queries",
+      "truth": [
+        "packages/vite/src/node/server/middlewares/__tests__/indexHtml.spec.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts",
+        "playground/html/__tests__/html.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts",
+        "packages/plugin-legacy/src/index.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/server/warmup.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/server/middlewares/htmlFallback.ts"
+      ],
+      "recall": 0.3333333333333333,
+      "hit": 1,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query": "align worker urls in client and server when using terser",
+      "truth": [
+        "packages/vite/src/node/__tests__/plugins/worker.spec.ts",
+        "packages/vite/src/node/plugins/terser.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/terser.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/logger.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "only register time middleware when debug logging is enabled",
+      "truth": [
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/server/middlewares/time.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/middlewares/time.ts",
+        "packages/vite/src/node/deprecations.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/module-runner/sourcemap/index.ts",
+        "packages/vite/src/node/server/middlewares/transform.ts",
+        "packages/vite/src/node/server/middlewares/notFound.ts",
+        "packages/vite/src/node/server/middlewares/static.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "avoid encoding intermediate source maps",
+      "truth": [
+        "packages/vite/src/node/__tests__/utils.spec.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/node/ssr/ssrTransform.ts"
+      ],
+      "top": [
+        "packages/vite/src/module-runner/sourcemap/index.ts",
+        "packages/vite/src/module-runner/sourcemap/interceptor.ts",
+        "packages/vite/rolldown.config.ts",
+        "packages/vite/src/shared/utils.ts",
+        "packages/vite/src/node/ssr/runtime/serverModuleRunner.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/module-runner/utils.ts",
+        "packages/vite/src/node/plugins/html.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "release previous environments after initialization",
+      "truth": [
+        "packages/vite/src/node/__tests__/dev.spec.ts",
+        "packages/vite/src/node/server/index.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/baseEnvironment.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/server/environment.ts",
+        "scripts/mergeChangelog.ts",
+        "packages/vite/src/node/server/pluginContainer.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.25
+    },
+    {
+      "query": "handle file watcher errors without crashing",
+      "truth": [
+        "packages/vite/src/node/__tests__/dev.spec.ts",
+        "packages/vite/src/node/server/index.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/optimizer/pluginConverter.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/oxc.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/middlewares/error.ts",
+        "packages/vite/src/node/watch.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/server/hmr.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "avoid quadratic link scan in the preload helper",
+      "truth": [
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "playground/js-sourcemap/__tests__/js-sourcemap.spec.ts",
+        "playground/preload/__tests__/preload.spec.ts",
+        "playground/preload/src/about.js",
+        "playground/preload/vite.config.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/modulePreloadPolyfill.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/optimizer/scan.ts",
+        "packages/vite/src/node/plugins/wasm.ts"
+      ],
+      "recall": 0.2,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "merge `build.rolldownOptions.output.minify` correctly",
+      "truth": [
+        "packages/vite/src/node/__tests__/build.spec.ts",
+        "packages/vite/src/node/build.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/optimizer/scan.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/__tests__/build.spec.ts",
+        "packages/vite/src/node/plugins/worker.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "avoid \"unsupported\" warnings for browser:false mappings",
+      "truth": [
+        "packages/vite/src/node/optimizer/rolldownDepPlugin.ts",
+        "playground/optimize-deps/__tests__/optimize-deps.spec.ts",
+        "playground/optimize-deps/dep-browser-false/index.js"
+      ],
+      "top": [
+        "packages/vite/src/node/deprecations.ts",
+        "packages/vite/src/node/nativeConfigCompat.ts",
+        "packages/vite/src/node/server/pluginContainer.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "playground/test-utils.ts",
+        "packages/vite/src/node/plugins/oxc.ts",
+        "packages/vite/src/shared/moduleRunnerTransport.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "preload CSS correctly when `renderBuiltUrl` returns URLs with queries",
+      "truth": [
+        "packages/vite/src/node/__tests__/plugins/importAnalysisBuild.spec.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "playground/js-sourcemap/__tests__/js-sourcemap.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/assetImportMetaUrl.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/workerImportMetaUrl.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts"
+      ],
+      "recall": 0.3333333333333333,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "resolve percent-encoded srcset urls",
+      "truth": [
+        "packages/vite/src/node/plugins/html.ts",
+        "playground/assets/__tests__/assets.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/shared/utils.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/module-runner/utils.ts",
+        "packages/vite/src/node/plugins/wasm.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "pass queries to `renderBuiltUrl`",
+      "truth": [
+        "packages/vite/src/node/__tests__/build.spec.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/html.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/plugin-legacy/src/index.ts",
+        "packages/vite/src/node/plugins/workerImportMetaUrl.ts",
+        "packages/vite/src/node/plugins/assetImportMetaUrl.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/node/__tests__/build.spec.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "preserve excluded optional peer require fallbacks",
+      "truth": [
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/optimizer/rolldownDepPlugin.ts",
+        "playground/optimize-deps/__tests__/optimize-deps.spec.ts",
+        "playground/optimize-deps/dep-with-excluded-optional-peer-dep-cjs/index.js",
+        "playground/optimize-deps/vite.config.js"
+      ],
+      "top": [
+        "packages/vite/src/node/optimizer/rolldownDepPlugin.ts",
+        "packages/vite/src/node/nodeResolve.ts",
+        "playground/nested-deps/test-package-e/test-package-e-excluded/index.js",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/server/middlewares/htmlFallback.ts",
+        "playground/optimize-deps/dep-with-excluded-optional-peer-dep-cjs/index.js",
+        "packages/vite/src/node/packages.ts",
+        "docs/_data/acknowledgements.data.ts"
+      ],
+      "recall": 0.4,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "serve lazy chunk sourcemaps",
+      "truth": [
+        "packages/vite/src/node/server/bundledDev.ts",
+        "playground/hmr-full-bundle-mode/__tests__/hmr-full-bundle-mode.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/middlewares/triggerLazyBundling.ts",
+        "packages/plugin-legacy/src/index.ts",
+        "packages/vite/src/node/server/sourcemap.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/manifest.ts",
+        "packages/vite/src/node/server/pluginContainer.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "serve the rolldown runtime from the installed rolldown",
+      "truth": [
+        "packages/vite/rolldown.config.ts",
+        "packages/vite/src/node/__tests__/plugins/clientInjections.spec.ts",
+        "packages/vite/src/node/constants.ts",
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/server/bundledDev.ts",
+        "playground/hmr-full-bundle-mode/__tests__/hmr-full-bundle-mode.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/client/bundledDevClient.ts",
+        "packages/vite/src/node/server/bundledDev.ts",
+        "packages/create-vite/src/index.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/plugins/css.ts"
+      ],
+      "recall": 0.3333333333333333,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "use `tinyexec` instead of `cross-spawn`",
+      "truth": [
+        "packages/vite/src/node/server/openBrowser.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/create-vite/src/index.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/shared/moduleRunnerTransport.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/html.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "encode whitespace in module runner sourceURL",
+      "truth": [
+        "packages/vite/src/module-runner/sourcemap/interceptor.ts",
+        "packages/vite/src/node/ssr/__tests__/fixtures/modules/with space/has-error.js",
+        "packages/vite/src/node/ssr/__tests__/ssrStacktrace.spec.ts",
+        "packages/vite/src/node/ssr/fetchModule.ts",
+        "packages/vite/src/node/ssr/runtime/__tests__/server-source-maps.spec.ts",
+        "packages/vite/src/node/ssr/ssrStacktrace.ts",
+        "packages/vite/src/shared/utils.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/ssr/fetchModule.ts",
+        "packages/vite/src/shared/utils.ts",
+        "packages/vite/src/module-runner/sourcemap/interceptor.ts",
+        "packages/vite/src/module-runner/sourcemap/index.ts",
+        "packages/vite/src/module-runner/runner.ts",
+        "packages/vite/src/node/ssr/ssrModuleLoader.ts",
+        "packages/vite/src/module-runner/utils.ts",
+        "packages/vite/src/node/plugins/css.ts"
+      ],
+      "recall": 0.42857142857142855,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "limit size of object and array printing via `forwardConsole`",
+      "truth": [
+        "packages/vite/src/shared/__tests__/forwardConsole.spec.ts",
+        "packages/vite/src/shared/__tests__/pretty-format.spec.ts",
+        "packages/vite/src/shared/forwardConsole.ts",
+        "packages/vite/src/shared/pretty-format.ts",
+        "playground/forward-console/__test__/forward-console.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/shared/pretty-format.ts",
+        "packages/vite/src/shared/forwardConsole.ts",
+        "packages/vite/rolldown.config.ts",
+        "packages/vite/src/node/plugins/forwardConsole.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/logger.ts",
+        "packages/vite/src/node/plugins/index.ts"
+      ],
+      "recall": 0.4,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "handle `server.ws: false` in mergeConfig",
+      "truth": [
+        "packages/vite/src/node/__tests__/config.spec.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/ws.ts",
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/server/middlewares/static.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/server/middlewares/proxy.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "avoid reinitializing watcher when adding file after server close",
+      "truth": [
+        "packages/vite/src/node/server/__tests__/watcher.spec.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/watch.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/watch.ts",
+        "packages/vite/src/node/preview.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/optimizedDeps.ts",
+        "packages/vite/src/node/server/warmup.ts",
+        "packages/vite/src/node/server/environment.ts",
+        "packages/vite/src/node/server/__tests__/watcher.spec.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "skip URL source roots when injecting sources content",
+      "truth": [
+        "packages/vite/src/node/server/__tests__/sourcemap.spec.ts",
+        "packages/vite/src/node/server/sourcemap.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/sourcemap.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/module-runner/sourcemap/interceptor.ts",
+        "packages/vite/src/node/server/transformRequest.ts",
+        "packages/vite/src/node/server/send.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts",
+        "packages/vite/src/module-runner/sourcemap/decoder.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "resolve pending discovered dep processing on close before init",
+      "truth": [
+        "packages/vite/src/node/__tests__/optimizer/discoverBeforeListen.spec.ts",
+        "packages/vite/src/node/optimizer/optimizer.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/optimizer/optimizer.ts",
+        "packages/vite/src/node/server/environment.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/plugins/optimizedDeps.ts",
+        "packages/vite/src/node/server/transformRequest.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/server/index.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "replace `find` with `some`",
+      "truth": [
+        "packages/vite/src/node/plugins/preAlias.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/license.ts",
+        "packages/vite/src/node/packages.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/ssr/ssrTransform.ts",
+        "scripts/mergeChangelog.ts",
+        "packages/vite/src/node/server/middlewares/static.ts",
+        "packages/vite/src/node/nativeConfigCompat.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "don't skip imports whose binding starts with type",
+      "truth": [
+        "packages/vite/src/node/__tests__/scan.spec.ts",
+        "packages/vite/src/node/optimizer/scan.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/rolldown.dts.config.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/node/nativeConfigCompat.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/plugins/wasm.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "remove duplicate configurations",
+      "truth": [
+        "packages/vite/src/node/build.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/middlewares/static.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/client/client.ts",
+        "packages/plugin-legacy/src/index.ts",
+        "packages/vite/rolldown.dts.config.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/preview.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "assets regexp use non-capture",
+      "truth": [
+        "packages/vite/src/node/constants.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/define.ts",
+        "packages/vite/src/node/plugins/assetImportMetaUrl.ts",
+        "playground/test-utils.ts",
+        "packages/vite/src/node/plugins/manifest.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "merge `build.rolldownOptions.output.comments` correctly",
+      "truth": [
+        "packages/vite/src/node/build.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/optimizer/scan.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/__tests__/build.spec.ts",
+        "packages/vite/rolldown.dts.config.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "handle CRLF line endings in code frame positions",
+      "truth": [
+        "packages/vite/src/node/__tests__/utils.spec.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/pluginContainer.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/module-runner/sourcemap/interceptor.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/__tests__/plugins/importAnalysisBuild.spec.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.125
+    },
+    {
+      "query": "pre-compile context matchers at server creation",
+      "truth": [
+        "packages/vite/src/node/server/middlewares/proxy.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/middlewares/proxy.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts",
+        "packages/vite/src/node/preview.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/server/pluginContainer.ts",
+        "packages/vite/src/node/server/middlewares/static.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "shortcuts extend error",
+      "truth": [
+        "packages/vite/src/node/shortcuts.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/shortcuts.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/preview.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/__tests__/shortcuts.spec.ts",
+        "packages/vite/src/shared/moduleRunnerTransport.ts",
+        "packages/vite/src/node/cli.ts",
+        "packages/vite/src/node/server/openBrowser.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "enable dev server integration",
+      "truth": [
+        "packages/vite/rolldown.config.ts",
+        "packages/vite/src/node/__tests__/config.spec.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/index.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/types/internal/devtoolsOptions.d.ts",
+        "playground/devtools/vite.config.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/environments/runnableEnvironment.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts",
+        "packages/vite/src/node/ssr/runtime/serverModuleRunner.ts",
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/preview.ts"
+      ],
+      "recall": 0.125,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "resolve the actual package root in findNearestMainPackageData for nested package.json",
+      "truth": [
+        "packages/vite/src/node/__tests__/packages.spec.ts",
+        "packages/vite/src/node/packages.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/packages.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/plugins/license.ts",
+        "packages/vite/src/node/optimizer/resolve.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "don't inline preload link targets (fix #13355)",
+      "truth": [
+        "packages/vite/src/node/plugins/html.ts",
+        "playground/assets/__tests__/assets.spec.ts",
+        "playground/assets/preload-module.js"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/modulePreloadPolyfill.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "playground/preload/__tests__/preload.spec.ts",
+        "packages/plugin-legacy/src/index.ts"
+      ],
+      "recall": 0.3333333333333333,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "keep hash placeholders as-is in `resolveFileUrl` hook",
+      "truth": [
+        "packages/vite/src/node/plugins/asset.ts",
+        "playground/assets/__tests__/assets.spec.ts",
+        "playground/assets/__tests__/encoded-base/assets-encoded-base.spec.ts",
+        "playground/assets/__tests__/relative-base/assets-relative-base.spec.ts",
+        "playground/assets/__tests__/runtime-base/assets-runtime-base.spec.ts",
+        "playground/assets/__tests__/url-base/assets-url-base.spec.ts",
+        "playground/assets/asset/emitted-worker.js",
+        "playground/assets/asset/main.js",
+        "playground/assets/vite.config-runtime-base.js",
+        "playground/assets/vite.config.js"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/workerImportMetaUrl.ts",
+        "packages/vite/src/node/plugin.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/plugins/assetImportMetaUrl.ts",
+        "packages/vite/src/node/build.ts"
+      ],
+      "recall": 0.1,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "mark payload delivered on client report",
+      "truth": [
+        "packages/vite/src/client/bundledDevClient.ts",
+        "packages/vite/src/node/server/bundledDev.ts",
+        "packages/vite/src/node/server/middlewares/memoryFiles.ts",
+        "packages/vite/src/node/server/middlewares/triggerLazyBundling.ts",
+        "playground/lazy-compilation/__tests__/lazy-compilation.spec.ts",
+        "playground/lazy-compilation/main.js",
+        "playground/lazy-compilation/page-a.js",
+        "playground/lazy-compilation/page-b.js",
+        "playground/lazy-compilation/page-c.js",
+        "playground/lazy-compilation/shared.js",
+        "playground/lazy-compilation/vite.config.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/bundledDev.ts",
+        "packages/vite/src/client/bundledDevClient.ts",
+        "packages/vite/src/node/server/environment.ts",
+        "packages/vite/src/node/plugins/forwardConsole.ts",
+        "packages/vite/src/client/client.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/plugins/reporter.ts",
+        "packages/vite/src/node/ssr/runtime/serverModuleRunner.ts"
+      ],
+      "recall": 0.18181818181818182,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "add top-level `tsconfig` option",
+      "truth": [
+        "packages/vite/src/node/__tests__/build.spec.ts",
+        "packages/vite/src/node/__tests__/config.spec.ts",
+        "packages/vite/src/node/__tests__/plugins/oxc.spec.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/plugins/oxc.ts",
+        "packages/vite/src/node/plugins/resolve.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/baseEnvironment.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/server/pluginContainer.ts",
+        "packages/vite/src/node/plugins/asset.ts"
+      ],
+      "recall": 0.375,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "delete unused `esbuildPlugin`",
+      "truth": [
+        "packages/vite/src/node/plugins/esbuild.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/optimizer/pluginConverter.ts",
+        "packages/vite/src/node/plugins/oxc.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/plugins/esbuildBannerFooterCompatPlugin.ts",
+        "packages/vite/src/node/plugins/prepareOutDir.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query": "handle dot in srcset density descriptor",
+      "truth": [
+        "packages/vite/src/node/__tests__/utils.spec.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/assetSource.ts",
+        "packages/vite/src/node/plugins/define.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/ssr/ssrTransform.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/plugins/css.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "add warning for unsupported hooks in plugin returned from `applyToEnvironment` hook",
+      "truth": [
+        "packages/vite/src/node/__tests__/config.spec.ts",
+        "packages/vite/src/node/plugin.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugin.ts",
+        "packages/vite/src/node/server/pluginContainer.ts",
+        "packages/vite/src/node/plugins/modulePreloadPolyfill.ts",
+        "packages/vite/src/node/plugins/oxc.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/index.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "warn on named imports from JSON modules",
+      "truth": [
+        "packages/vite/src/node/__tests__/config.spec.ts",
+        "packages/vite/src/node/__tests__/fixtures/config/native-compat/json-named-import-bare/vite.config.js",
+        "packages/vite/src/node/__tests__/fixtures/config/native-compat/json-named-import-ok/vite.config.js",
+        "packages/vite/src/node/__tests__/fixtures/config/native-compat/json-named-import/vite.config.js",
+        "packages/vite/src/node/nativeConfigCompat.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/nativeConfigCompat.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/server/moduleGraph.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/deprecations.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/module-runner/evaluatedModules.ts"
+      ],
+      "recall": 0.2,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "match timestamp query parameter with proper delimiters",
+      "truth": [
+        "packages/vite/src/node/__tests__/utils.spec.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/assetImportMetaUrl.ts",
+        "packages/vite/src/node/server/transformRequest.ts",
+        "packages/vite/src/node/server/send.ts",
+        "packages/vite/src/node/watch.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/plugins/importMetaGlob.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "keep newline-separated srcset candidates intact",
+      "truth": [
+        "packages/vite/src/node/__tests__/utils.spec.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "top": [
+        "docs/_data/acknowledgements.data.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/__tests__/config.spec.ts",
+        "packages/vite/src/node/assetSource.ts",
+        "packages/vite/src/node/server/moduleGraph.ts",
+        "packages/vite/src/node/plugins/asset.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "use `urlId` of `import.meta.ROLLDOWN_FILE_URL` in wasm plugin",
+      "truth": [
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/wasm.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/wasm.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/workerImportMetaUrl.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "use `import.meta.ROLLDOWN_FILE_URL_*` for other plugins",
+      "truth": [
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/assetImportMetaUrl.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/wasm.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/plugins/workerImportMetaUrl.ts",
+        "playground/worker/__tests__/relative-base/worker-relative-base.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/plugin.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/server/pluginContainer.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/plugin-legacy/src/index.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "use `import.meta.ROLLDOWN_FILE_URL_*` for assets in JS",
+      "truth": [
+        "packages/vite/src/node/constants.ts",
+        "packages/vite/src/node/plugins/asset.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/manifest.ts",
+        "packages/vite/src/node/plugins/define.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/plugin-legacy/src/index.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "exclude postfix from `__VITE_ASSET__`",
+      "truth": [
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/html.ts"
+      ],
+      "top": [
+        "packages/vite/src/shared/utils.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/plugins/pluginFilter.ts",
+        "packages/vite/src/node/plugins/workerImportMetaUrl.ts"
+      ],
+      "recall": 0.6666666666666666,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "searched params attached to workers are now preserved",
+      "truth": [
+        "packages/vite/src/node/__tests__/plugins/worker.spec.ts",
+        "packages/vite/src/node/__tests__/plugins/workerImportMetaUrl.spec.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/plugins/workerImportMetaUrl.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/dynamicImportVars.ts",
+        "packages/vite/src/node/server/ws.ts",
+        "packages/vite/src/node/plugins/workerImportMetaUrl.ts",
+        "packages/vite/src/node/server/middlewares/triggerLazyBundling.ts",
+        "packages/vite/src/client/client.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "recall": 0.6,
+      "hit": 1,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query": "accept Rolldown watch options in `server.watch`",
+      "truth": [
+        "packages/vite/src/node/index.ts",
+        "packages/vite/src/node/server/bundledDev.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/watch.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/watch.ts",
+        "packages/vite/rolldown.config.ts",
+        "packages/vite/src/node/plugins/prepareOutDir.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/server/pluginContainer.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "add closeServer and closePreviewServer hooks",
+      "truth": [
+        "packages/vite/src/node/__tests__/plugins/hooks.spec.ts",
+        "packages/vite/src/node/plugin.ts",
+        "packages/vite/src/node/preview.ts",
+        "packages/vite/src/node/server/index.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/preview.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts",
+        "packages/vite/src/node/server/middlewares/hostCheck.ts",
+        "packages/vite/src/node/server/pluginContainer.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/__tests__/plugins/hooks.spec.ts",
+        "packages/vite/src/node/plugin.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "remove worker chunk if it's detected that it's not referenced",
+      "truth": [
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/plugins/workerImportMetaUrl.ts",
+        "playground/worker/__tests__/es/worker-es.spec.ts",
+        "playground/worker/dce-test-importer.js",
+        "playground/worker/dce-test-live-nested-worker.js",
+        "playground/worker/dce-test-live-worker-importer.js",
+        "playground/worker/dce-test-live-worker.js",
+        "playground/worker/dce-test-nested-worker.js",
+        "playground/worker/dce-test-worker.js",
+        "playground/worker/worker/main-module.js"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/plugin-legacy/src/snippets.ts",
+        "packages/vite/src/node/plugins/workerImportMetaUrl.ts",
+        "packages/vite/src/node/server/searchRoot.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "recall": 0.2,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "minify style tag",
+      "truth": [
+        "packages/vite/src/node/plugins/css.ts",
+        "playground/css-lightningcss/__tests__/css-lightningcss.spec.ts",
+        "playground/minify/__tests__/minify.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/plugin-legacy/src/index.ts",
+        "playground/hmr/css-style/plugin.ts",
+        "packages/vite/src/client/client.ts",
+        "playground/css-sourcemap/__tests__/css-sourcemap.spec.ts",
+        "playground/css-sourcemap/__tests__/lightningcss/lightningcss.spec.ts"
+      ],
+      "recall": 0.3333333333333333,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "support subpath imports in dynamic import statements",
+      "truth": [
+        "packages/vite/src/node/plugins/dynamicImportVars.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "playground/dynamic-import/__tests__/dynamic-import.spec.ts",
+        "playground/dynamic-import/nested/index.js"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/dynamicImportVars.ts",
+        "packages/vite/src/node/ssr/ssrTransform.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/shared/ssrTransform.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/asset.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "support naming the CPU profile via --profile [name]",
+      "truth": [
+        "packages/vite/bin/vite.js",
+        "packages/vite/src/node/cli.ts",
+        "packages/vite/src/types/shims.d.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/cli.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/nativeConfigCompat.ts",
+        "packages/vite/rolldown.dts.config.ts",
+        "packages/vite/src/node/server/middlewares/notFound.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/logger.ts",
+        "packages/vite/src/node/plugins/worker.ts"
+      ],
+      "recall": 0.3333333333333333,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "remove HmrUrl concept",
+      "truth": [
+        "packages/vite/src/client/client.ts",
+        "packages/vite/src/module-runner/hmrHandler.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/server/transformRequest.ts",
+        "packages/vite/types/customEvent.d.ts",
+        "packages/vite/types/hmrPayload.d.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/client/client.ts",
+        "packages/vite/src/shared/hmr.ts",
+        "packages/vite/src/module-runner/hmrHandler.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/plugins/html.ts"
+      ],
+      "recall": 0.5714285714285714,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "handle `import.meta.hot.invalidate` in virtual module",
+      "truth": [
+        "packages/vite/src/node/server/environment.ts",
+        "playground/hmr/__tests__/hmr.spec.ts",
+        "playground/hmr/virtual-invalidation/dep.js",
+        "playground/hmr/virtual-invalidation/parent.js",
+        "playground/hmr/vite.config.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/node/ssr/ssrModuleLoader.ts",
+        "packages/vite/src/node/server/moduleGraph.ts",
+        "packages/vite/src/node/plugins/importMetaGlob.ts",
+        "packages/vite/src/module-runner/evaluatedModules.ts",
+        "packages/vite/src/node/server/mixedModuleGraph.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/module-runner/runner.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "run closeBundle after buildEnd failure",
+      "truth": [
+        "packages/vite/src/node/server/__tests__/pluginContainer.spec.ts",
+        "packages/vite/src/node/server/pluginContainer.ts"
+      ],
+      "top": [
+        "packages/vite/rolldown.config.ts",
+        "packages/vite/src/node/preview.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/server/environment.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/optimizer/pluginConverter.ts",
+        "packages/vite/src/node/build.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "close bundles when generation fails",
+      "truth": [
+        "packages/vite/src/node/config.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/middlewares/triggerLazyBundling.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/preview.ts",
+        "packages/vite/src/node/watch.ts",
+        "packages/vite/src/client/client.ts",
+        "packages/vite/src/client/bundledDevHmrClient.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 0.25
+    },
+    {
+      "query": "rewrite computed key of destructing parameter",
+      "truth": [
+        "packages/vite/src/node/ssr/__tests__/ssrTransform.spec.ts",
+        "packages/vite/src/node/ssr/ssrTransform.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/middlewares/proxy.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/packages.ts",
+        "packages/vite/src/node/ssr/ssrTransform.ts",
+        "packages/vite/src/node/server/mixedModuleGraph.ts",
+        "packages/vite/src/node/watch.ts",
+        "packages/vite/src/node/optimizer/index.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.2
+    },
+    {
+      "query": "respect `resolve.preserveSymlinks` when resolving root (fix #23197)",
+      "truth": [
+        "packages/vite/src/node/__tests__/config.spec.ts",
+        "packages/vite/src/node/config.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/optimizer/resolve.ts",
+        "packages/vite/src/node/ssr/index.ts",
+        "packages/vite/src/node/packages.ts",
+        "packages/vite/src/node/nodeResolve.ts",
+        "packages/vite/src/node/__tests__/optimizer/resolve.spec.ts",
+        "packages/vite/src/node/plugins/preAlias.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.5
+    },
+    {
+      "query": "resolve sourcemap paths against sourcemap location",
+      "truth": [
+        "packages/vite/src/node/__tests__/config.spec.ts",
+        "packages/vite/src/node/config.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/sourcemap.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/nodeResolve.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/optimizer/scan.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts",
+        "packages/vite/src/node/config.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.125
+    },
+    {
+      "query": "use JSON import attributes instead of readFileSync in constants",
+      "truth": [
+        "packages/vite/src/node/constants.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/nativeConfigCompat.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/assetSource.ts",
+        "packages/vite/src/node/server/searchRoot.ts",
+        "packages/vite/src/node/plugins/license.ts",
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/optimizer/index.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "don't pass empty targets to lightningcss",
+      "truth": [
+        "packages/vite/src/node/__tests__/plugins/css.spec.ts",
+        "packages/vite/src/node/plugins/css.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/watch.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/plugin-legacy/src/index.ts",
+        "packages/vite/bin/openChrome.js"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "exclude completed modules from in-flight cycle detection (fix #22999)",
+      "truth": [
+        "packages/vite/src/module-runner/runner.ts",
+        "packages/vite/src/node/ssr/runtime/__tests__/fixtures/hmr-evaluated-import-race/evaluated.js",
+        "packages/vite/src/node/ssr/runtime/__tests__/fixtures/hmr-evaluated-import-race/shared.js",
+        "packages/vite/src/node/ssr/runtime/__tests__/server-hmr.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/scripts/benchCircularImport.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/mixedModuleGraph.ts",
+        "packages/vite/src/node/server/moduleGraph.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/packages.ts",
+        "packages/vite/src/node/plugins/importMetaGlob.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "update outdated upstream file links in license comments",
+      "truth": [
+        "packages/vite/rollupLicensePlugin.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/types/alias.d.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/optimizedDeps.ts",
+        "packages/vite/rolldown.dts.config.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/plugins/license.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/plugins/terser.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "hot update through circular imports instead of reloading",
+      "truth": [
+        "packages/vite/src/client/bundledDevHmrClient.ts",
+        "playground/hmr/__tests__/hmr.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/client/client.ts",
+        "packages/vite/src/client/bundledDevHmrClient.ts",
+        "packages/vite/src/shared/hmr.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/server/bundledDev.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/server/__tests__/hmr.spec.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query": "handle lazy request error",
+      "truth": [
+        "packages/vite/src/node/server/middlewares/triggerLazyBundling.ts",
+        "playground/hmr-full-bundle-mode/__tests__/hmr-full-bundle-mode.spec.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/middlewares/triggerLazyBundling.ts",
+        "packages/vite/src/node/server/middlewares/rejectInvalidRequest.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/server/environments/fetchableEnvironments.ts",
+        "packages/vite/src/node/server/transformRequest.ts",
+        "packages/vite/src/node/server/middlewares/error.ts",
+        "playground/lazy-compilation/__tests__/lazy-compilation.spec.ts",
+        "packages/vite/src/node/server/pluginContainer.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "reduce Windows 8.3-short-name detection false-positives",
+      "truth": [
+        "packages/vite/src/node/server/middlewares/__tests__/static.spec.ts",
+        "packages/vite/src/node/server/middlewares/static.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/middlewares/static.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/src/module-runner/utils.ts",
+        "packages/vite/src/shared/utils.ts",
+        "packages/vite/src/module-runner/createImportMeta.ts",
+        "packages/vite/src/module-runner/evaluatedModules.ts",
+        "packages/vite/src/node/plugins/css.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "use named regex constants over inline literals",
+      "truth": [
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/nativeConfigCompat.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/hmr.ts",
+        "packages/vite/rolldown.dts.config.ts",
+        "packages/vite/src/node/nativeConfigCompat.ts",
+        "packages/vite/src/node/ssr/ssrTransform.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/shared/ssrTransform.ts",
+        "packages/vite/src/node/config.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "query": "fix match escaped dots to support $-prefixed define keys",
+      "truth": [
+        "packages/vite/src/node/__tests__/plugins/define.spec.ts",
+        "packages/vite/src/node/plugins/define.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/define.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/env.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/shared/pretty-format.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "close custom extension analysis bundles",
+      "truth": [
+        "packages/vite/src/node/__tests__/optimizer/customExtensionBundleClose.spec.ts",
+        "packages/vite/src/node/optimizer/index.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/plugins/importAnalysis.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/resolve.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/preview.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "use a random port when port is 0",
+      "truth": [
+        "packages/vite/src/node/__tests__/http.spec.ts",
+        "packages/vite/src/node/http.ts",
+        "packages/vite/src/node/server/index.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/http.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/ssr/__tests__/ssrTransform.spec.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/server/ws.ts",
+        "packages/vite/src/node/preview.ts",
+        "packages/vite/src/module-runner/runner.ts"
+      ],
+      "recall": 0.6666666666666666,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "don't re-run lightningcss visitor during minify (fix #23146)",
+      "truth": [
+        "packages/vite/src/node/plugins/css.ts",
+        "playground/css-lightningcss/__tests__/css-lightningcss.spec.ts",
+        "playground/css-lightningcss/vite.config.js"
+      ],
+      "top": [
+        "playground/css-lightningcss/vite.config.js",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/module-runner/createImportMeta.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/optimizer/optimizer.ts",
+        "packages/vite/src/node/config.ts"
+      ],
+      "recall": 0.6666666666666666,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "make client chunkImportMap work with `sharedPlugins: true`",
+      "truth": [
+        "packages/plugin-legacy/src/index.ts",
+        "packages/vite/src/node/__tests__/build.spec.ts",
+        "packages/vite/src/node/__tests__/fixtures/shared-plugins/chunk-import-map/entry.js",
+        "packages/vite/src/node/__tests__/fixtures/shared-plugins/chunk-import-map/lazy.js",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/plugin-legacy/src/index.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/plugins/index.ts",
+        "packages/vite/src/node/plugins/terser.ts",
+        "packages/vite/src/node/plugins/reporter.ts"
+      ],
+      "recall": 0.4444444444444444,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "inject client script tag before chunk scripts",
+      "truth": [
+        "packages/vite/src/node/constants.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/server/bundledDev.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/utils.ts",
+        "playground/js-sourcemap/__tests__/js-sourcemap.spec.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/plugin-legacy/src/index.ts"
+      ],
+      "recall": 0.3333333333333333,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "avoid injecting server values in the bundle",
+      "truth": [
+        "packages/vite/src/client/bundledDevClient.ts",
+        "packages/vite/src/node/server/bundledDev.ts",
+        "packages/vite/src/node/server/middlewares/indexHtml.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/clientInjections.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/plugin-legacy/src/index.ts",
+        "packages/vite/src/node/server/index.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/rolldown.config.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/utils.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "remove rolldown lazy stub module workaround",
+      "truth": [
+        "packages/vite/src/node/server/bundledDev.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/server/middlewares/triggerLazyBundling.ts",
+        "packages/vite/src/node/packages.ts",
+        "packages/vite/src/node/optimizer/index.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/optimizer/rolldownDepPlugin.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/utils.ts",
+        "packages/vite/src/node/server/moduleGraph.ts"
+      ],
+      "recall": 0,
+      "hit": 0,
+      "mrr": 0
+    },
+    {
+      "query": "don't mutate the user config when resolving the lib entry from the top-level `input`",
+      "truth": [
+        "packages/vite/src/node/__tests__/build.spec.ts",
+        "packages/vite/src/node/build.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/config.ts",
+        "packages/vite/src/node/optimizer/resolve.ts",
+        "packages/vite/src/node/baseEnvironment.ts",
+        "packages/vite/src/node/plugins/worker.ts",
+        "packages/vite/src/node/plugins/asset.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/plugins/reporter.ts"
+      ],
+      "recall": 0.5,
+      "hit": 1,
+      "mrr": 1
+    },
+    {
+      "query": "look up pure CSS chunks through a Set",
+      "truth": [
+        "packages/vite/src/node/plugins/css.ts"
+      ],
+      "top": [
+        "packages/vite/src/node/plugins/css.ts",
+        "packages/vite/src/node/plugins/html.ts",
+        "packages/vite/src/node/build.ts",
+        "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+        "packages/vite/src/node/plugins/manifest.ts",
+        "packages/vite/src/node/plugins/esbuild.ts",
+        "packages/vite/src/node/ssr/ssrManifestPlugin.ts",
+        "packages/vite/rolldown.dts.config.ts"
+      ],
+      "recall": 1,
+      "hit": 1,
+      "mrr": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "dsh-code-ctx",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "代码库上下文引擎：给定需求或报错，找出最该看的文件与函数",
+  "main": "src/plugin.js",
+  "files": [
+    "src",
+    "bin",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "index": "node bin/cli.js index",
+    "search": "node bin/cli.js search"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@huggingface/transformers": "^4.3.1"
+  }
+}
